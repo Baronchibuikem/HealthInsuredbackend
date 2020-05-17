@@ -1,0 +1,26 @@
+{% extends 'emails/email_template.html' %}
+{% autoescape off %}
+{% block subject %}{{ subject }}{% endblock %}
+
+
+{% block content %}
+<br>
+
+<p><b style="font-size: 18px">
+Dear {{ name }},
+</b></p>
+<br><br>
+<hr>
+<h6>Message</h6>
+<hr>
+<p style="font-size: 22px">
+    <!--Reminder message goes here -->
+
+    This is to inform you that your health plan has expired.<br>
+    Please ....
+</p>
+
+
+{% endblock content %}
+
+{% endautoescape %}
